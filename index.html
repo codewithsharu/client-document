@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student–Teacher Learning & Coding Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background: #2c3e50;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        /* Section */
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .section-number {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+
+        /* Module Box */
+        .module-box {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .module-box h3 {
+            font-size: 16px;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .module-box h4 {
+            font-size: 14px;
+            color: #495057;
+            margin: 15px 0 10px 0;
+            font-weight: 600;
+        }
+
+        .module-box ul {
+            margin-left: 20px;
+            color: #555;
+        }
+
+        .module-box li {
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border: 1px solid #dee2e6;
+        }
+
+        th {
+            background: #2c3e50;
+            color: white;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .cost-table td:last-child {
+            text-align: right;
+            font-weight: 600;
+        }
+
+        .total-row {
+            background: #3498db !important;
+            color: white;
+            font-weight: 700;
+        }
+
+        .total-row td {
+            border-color: #3498db;
+        }
+
+        /* Info Box */
+        .info-box {
+            background: #e8f4fd;
+            border-left: 4px solid #3498db;
+            padding: 15px 20px;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+
+        /* Two Column Layout */
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Feature List */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .feature-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            border: 1px solid #e9ecef;
+        }
+
+        .feature-item strong {
+            color: #2c3e50;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .feature-item span {
+            font-size: 13px;
+            color: #666;
+        }
+
+        /* Highlight */
+        .highlight-green {
+            color: #27ae60;
+            font-weight: 600;
+        }
+
+        .highlight-red {
+            color: #e74c3c;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 30px;
+            background: #2c3e50;
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Student–Teacher Learning & Coding Platform</h1>
+        <p>Project Features Overview & Cost Breakdown</p>
+    </div>
+
+    <div class="container">
+
+        <!-- 1. Project Overview -->
+        <div class="section">
+            <h2 class="section-title"><span class="section-number">1</span>Project Overview</h2>
+            <p>The Student–Teacher Learning & Coding Platform is a comprehensive digital education system designed to streamline academic learning, assessments, and coding practice within a single unified platform.</p>
+            <p style="margin-top: 10px;">The system supports role-based access, automated evaluation, performance analytics, and competitive learning through leaderboards.</p>
+            
+            <div class="info-box">
+                <strong>Ideal For:</strong> Schools, Colleges, Training Institutes, and Ed-Tech Organizations seeking a secure, scalable, and modern learning solution.
+            </div>
+        </div>
+
+        <!-- 2. User Management -->
+        <div class="section">
+            <h2 class="section-title"><span class="section-number">2</span>User Management</h2>
+            <div class="module-box">
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Role-based access: Admin, Teacher, Student</li>
+                    <li>Secure login and authentication mechanism</li>
+                    <li>Class-wise user assignment</li>
+                    <li>User profile creation and management</li>
+                    <li>Access restrictions based on roles</li>
+                </ul>
+                <h4>Benefits:</h4>
+                <ul>
+                    <li>Prevents unauthorized access</li>
+                    <li>Clear separation of responsibilities</li>
+                    <li>Easy administration and scalability</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 3. Class & Subject Management -->
+        <div class="section">
+            <h2 class="section-title"><span class="section-number">3</span>Class & Subject Management</h2>
+            <div class="module-box">
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Class → Subject → Teacher mapping</li>
+                    <li>Student enrollment via manual entry or invite codes</li>
+                    <li>Batch and section management</li>
+                    <li>Class-level announcements and notices</li>
+                </ul>
+                <h4>Benefits:</h4>
+                <ul>
+                    <li>Organized academic hierarchy</li>
+                    <li>Easy student onboarding</li>
+                    <li>Centralized communication</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 4. Assignment Management -->
+        <div class="section">
+            <h2 class="section-title"><span class="section-number">4</span>Assignment Management</h2>
+            <div class="module-box">
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Class-wise assignment creation</li>
+                    <li>Support for MCQ, Theory, and Coding assignments</li>
+                    <li>File upload support and online answer editor</li>
+                    <li>Assignment deadlines with configurable late submission rules</li>
+                </ul>
+                <h4>Benefits:</h4>
+                <ul>
+                    <li>Flexible assessment types</li>
+                    <li>Reduced manual effort</li>
+                    <li>Clear submission tracking</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 5. Auto Evaluation -->
+        <div class="section">
+            <h2 class="section-title"><span class="section-number">5</span>Predefined Answers & Auto Evaluation</h2>
+            <div class="module-box">
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Teacher-defined correct answers</li>
+                    <li>Correct answers highlighted in <span class="highlight-green">Green</span></li>
+                    <li>Incorrect answers highlighted in <span class="highlight-red">Red</span></li>
+                    <li>Automatic score calculation</li>
+                    <li>Results stored permanently for future reference</li>
+                </ul>
+                <h4>Benefits:</h4>
+                <ul>
+                    <li>Saves teacher evaluation time</li>
+                    <li>Instant and transparent results</li>
+                    <li>Consistent and unbiased grading</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 6. Student Assignment Experience -->
+        <div class="section">
+            <h2 class="section-title"><span class="section-number">6</span>Student Assignment Experience</h2>
+            <div class="module-box">
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Clean and intuitive assignment attempt interface</li>
+                    <li>One-click submission</li>
+                    <li>Instant result viewing (configurable by teacher)</li>
+                    <li>Question-wise feedback</li>
+                    <li>Assignment attempt history tracking</li>
+                </ul>
+                <h4>Benefits:</h4>
+                <ul>
+                    <li>Improved student engagement</li>
+                    <li>Clear performance understanding</li>
+                    <li>Reduced confusion during submissions</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 7. Student Performance Dashboard -->
+        <div class="section">
+            <h2 class="section-title"><span class="section-number">7</span>Student Performance Dashboard</h2>
+            <div class="module-box">
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Total score overview</li>
+                    <li>Subject-wise marks analysis</li>
+                    <li>Visual performance graphs</li>
+                    <li>Progress tracking over time</li>
+                </ul>
+                <h4>Benefits:</h4>
+                <ul>
+                    <li>Encourages self-assessment</li>
+                    <li>Identifies strengths and weaknesses</li>
+                    <li>Supports continuous improvement</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 8. Leaderboard System -->
+        <div class="section">
+            <h2 class="section-title"><span class="section-number">8</span>Leaderboard System</h2>
+            <div class="module-box">
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Class-wise leaderboards</li>
+                    <li>Assignment-wise rankings</li>
+                    <li>Weekly and monthly leaderboards</li>
+                    <li>Points, badges, and achievements system</li>
+                </ul>
+                <h4>Benefits:</h4>
+                <ul>
+                    <li>Boosts motivation</li>
+                    <li>Encourages healthy competition</li>
+                    <li>Increases platform engagement</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 9. Teacher Dashboard -->
+        <div class="section">
+            <h2 class="section-title"><span class="section-number">9</span>Teacher Dashboard</h2>
+            <div class="module-box">
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Assignment completion tracking</li>
+                    <li>Student-wise performance insights</li>
+                    <li>Pending evaluation overview</li>
+                </ul>
+                <h4>Benefits:</h4>
+                <ul>
+                    <li>Quick academic monitoring</li>
+                    <li>Data-driven teaching decisions</li>
+                    <li>Reduced administrative workload</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 10. Coding Practice Platform -->
+        <div class="section">
+            <h2 class="section-title"><span class="section-number">10</span>Coding Practice Platform</h2>
+            <div class="module-box">
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Topic-wise coding problems</li>
+                    <li>Difficulty levels: Easy / Medium / Hard</li>
+                    <li>Built-in code editor</li>
+                    <li>Integrated compiler for execution</li>
+                </ul>
+                <h4>Benefits:</h4>
+                <ul>
+                    <li>Practical skill development</li>
+                    <li>Structured coding progression</li>
+                    <li>No external tools required</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 11. Coding Assignments & Evaluation -->
+        <div class="section">
+            <h2 class="section-title"><span class="section-number">11</span>Coding Assignments & Evaluation</h2>
+            <div class="module-box">
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Teacher-uploaded coding tasks</li>
+                    <li>Predefined test cases</li>
+                    <li>Automated code execution and evaluation</li>
+                </ul>
+                <h4>Benefits:</h4>
+                <ul>
+                    <li>Objective coding assessment</li>
+                    <li>Faster evaluation cycles</li>
+                    <li>Industry-aligned practice</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 12. Coding Analytics -->
+        <div class="section">
+            <h2 class="section-title"><span class="section-number">12</span>Coding Analytics</h2>
+            <div class="module-box">
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Test case-wise execution results</li>
+                    <li>Runtime and memory usage analysis</li>
+                    <li>Saved code submissions</li>
+                    <li>Attempt history tracking</li>
+                </ul>
+                <h4>Benefits:</h4>
+                <ul>
+                    <li>Helps students optimize code</li>
+                    <li>Tracks improvement over time</li>
+                    <li>Supports competitive coding standards</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 13. Coding Leaderboard -->
+        <div class="section">
+            <h2 class="section-title"><span class="section-number">13</span>Coding Leaderboard</h2>
+            <div class="module-box">
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Live coding leaderboards</li>
+                    <li>Rank and percentile display</li>
+                </ul>
+                <h4>Benefits:</h4>
+                <ul>
+                    <li>Encourages coding excellence</li>
+                    <li>Promotes consistent practice</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 14. Unified Student Dashboard -->
+        <div class="section">
+            <h2 class="section-title"><span class="section-number">14</span>Unified Student Dashboard</h2>
+            <div class="module-box">
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Academic and coding performance in one dashboard</li>
+                    <li>Assignment status and deadlines</li>
+                    <li>Coding progress summary</li>
+                    <li>Rank snapshot</li>
+                </ul>
+                <h4>Benefits:</h4>
+                <ul>
+                    <li>Complete learning overview</li>
+                    <li>Better time and effort management</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 15. Communication & Engagement -->
+        <div class="section">
+            <h2 class="section-title"><span class="section-number">15</span>Communication & Engagement</h2>
+            <div class="module-box">
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Class announcements</li>
+                    <li>Teacher feedback and comments</li>
+                    <li>In-app and email notifications</li>
+                </ul>
+                <h4>Benefits:</h4>
+                <ul>
+                    <li>Improves student-teacher interaction</li>
+                    <li>Ensures timely updates</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 16. Security & System Control -->
+        <div class="section">
+            <h2 class="section-title"><span class="section-number">16</span>Security & System Control</h2>
+            <div class="module-box">
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Role-based access control</li>
+                    <li>Secure file storage</li>
+                    <li>Anti-cheating mechanisms</li>
+                    <li>Activity logs and audit trails</li>
+                </ul>
+                <h4>Benefits:</h4>
+                <ul>
+                    <li>Data protection</li>
+                    <li>Academic integrity</li>
+                    <li>System transparency</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 17. Admin Controls & Analytics -->
+        <div class="section">
+            <h2 class="section-title"><span class="section-number">17</span>Admin Controls & Analytics</h2>
+            <div class="module-box">
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>User and class management</li>
+                    <li>Platform usage analytics</li>
+                    <li>Performance reports</li>
+                    <li>System health monitoring</li>
+                </ul>
+                <h4>Benefits:</h4>
+                <ul>
+                    <li>Data-driven decisions</li>
+                    <li>Smooth system operations</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 18. Cost Breakdown -->
+        <div class="section">
+            <h2 class="section-title"><span class="section-number">18</span>Project Cost Breakdown</h2>
+            
+            <table class="cost-table">
+                <thead>
+                    <tr>
+                        <th>Module</th>
+                        <th>Cost (INR)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Coding Module (Practice Platform, Compiler, Analytics, Leaderboard)</td>
+                        <td>₹15,000</td>
+                    </tr>
+                    <tr>
+                        <td>All Other Modules (Core Platform)</td>
+                        <td>₹35,000</td>
+                    </tr>
+                    <tr class="total-row">
+                        <td><strong>Total Project Cost</strong></td>
+                        <td><strong>₹50,000</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="info-box">
+                <strong>Includes:</strong> All 17 modules listed above with complete functionality, responsive design, and deployment support.
+            </div>
+        </div>
+
+        <!-- Module Summary Table -->
+        <div class="section">
+            <h2 class="section-title">Module Summary</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Module Name</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>User Management</td><td>Core</td></tr>
+                    <tr><td>2</td><td>Class & Subject Management</td><td>Core</td></tr>
+                    <tr><td>3</td><td>Assignment Management</td><td>Core</td></tr>
+                    <tr><td>4</td><td>Auto Evaluation System</td><td>Core</td></tr>
+                    <tr><td>5</td><td>Student Assignment Experience</td><td>Core</td></tr>
+                    <tr><td>6</td><td>Student Performance Dashboard</td><td>Core</td></tr>
+                    <tr><td>7</td><td>Leaderboard System</td><td>Core</td></tr>
+                    <tr><td>8</td><td>Teacher Dashboard</td><td>Core</td></tr>
+                    <tr><td>9</td><td>Unified Student Dashboard</td><td>Core</td></tr>
+                    <tr><td>10</td><td>Communication & Engagement</td><td>Core</td></tr>
+                    <tr><td>11</td><td>Security & System Control</td><td>Core</td></tr>
+                    <tr><td>12</td><td>Admin Controls & Analytics</td><td>Core</td></tr>
+                    <tr><td>13</td><td>Coding Practice Platform</td><td>Coding</td></tr>
+                    <tr><td>14</td><td>Coding Assignments & Evaluation</td><td>Coding</td></tr>
+                    <tr><td>15</td><td>Coding Analytics</td><td>Coding</td></tr>
+                    <tr><td>16</td><td>Coding Leaderboard</td><td>Coding</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Student–Teacher Learning & Coding Platform | Project Proposal Document</p>
+        <p style="opacity: 0.7; margin-top: 5px;">© 2026</p>
+    </div>
+
+</body>
+</html>
