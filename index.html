@@ -109,6 +109,16 @@
             margin-bottom: 36px;
         }
 
+        .page-break {
+            height: 24px;
+        }
+
+        @media print {
+            .page-break {
+                break-before: page;
+            }
+        }
+
         .section-title {
             font-size: 18px;
             font-weight: 600;
@@ -287,6 +297,63 @@
             color: #718096;
         }
 
+        /* UI Preview */
+        .preview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 16px;
+            margin: 18px 0 8px 0;
+        }
+
+        .preview-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+        }
+
+        .preview-card img {
+            width: 100%;
+            display: block;
+        }
+
+        .preview-caption {
+            padding: 14px 16px 16px 16px;
+        }
+
+        .preview-caption strong {
+            display: block;
+            color: #1a365d;
+            font-size: 14px;
+            margin: 6px 0 4px 0;
+        }
+
+        .preview-caption span {
+            color: #718096;
+            font-size: 12px;
+        }
+
+        .preview-tag {
+            display: inline-block;
+            background: #ebf8ff;
+            color: #2b6cb0;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 4px 8px;
+            border-radius: 999px;
+        }
+
+        .disclaimer {
+            background: linear-gradient(135deg, #fff7ed, #ffedd5);
+            border-left: 4px solid #f97316;
+            padding: 14px 18px;
+            border-radius: 0 10px 10px 0;
+            color: #9a3412;
+            font-size: 14px;
+            margin: 16px 0 10px 0;
+        }
+
         /* Highlight */
         .highlight-green {
             color: #38a169;
@@ -354,6 +421,115 @@
             
             <div class="info-box">
                 <strong>Ideal For:</strong> Schools, Colleges, Training Institutes, and Ed-Tech Organizations seeking a secure, scalable, and modern learning solution.
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+
+        <!-- UI Preview (Sample Screens) -->
+        <div class="section">
+            <h2 class="section-title">UI Preview (Sample Screens)</h2>
+            <p>The following UI screens are included to demonstrate the design direction and coverage of key modules. These are sample references only and do not represent the final visual output.</p>
+            <div class="disclaimer">
+                <strong>Note:</strong> This is a sample UI preview created for concept validation. Final layouts, colors, spacing, and components will be refined during the production phase based on feedback.
+            </div>
+
+            <div class="preview-grid">
+                <div class="preview-card">
+                    <img src="admindashboard1.jpeg" alt="Admin dashboard sample UI">
+                    <div class="preview-caption">
+                        <span class="preview-tag">Admin</span>
+                        <strong>Admin Dashboard</strong>
+                        <span>Platform analytics, users, and system health</span>
+                    </div>
+                </div>
+                <div class="preview-card">
+                    <img src="teacherdashboard1.jpeg" alt="Teacher dashboard sample UI">
+                    <div class="preview-caption">
+                        <span class="preview-tag">Teacher</span>
+                        <strong>Teacher Dashboard</strong>
+                        <span>Assignments, submissions, and grading trend</span>
+                    </div>
+                </div>
+                <div class="preview-card">
+                    <img src="teacherdashboard2.jpeg" alt="Teacher assignments sample UI">
+                    <div class="preview-caption">
+                        <span class="preview-tag">Teacher</span>
+                        <strong>Teacher Assignments</strong>
+                        <span>Recent tasks with submission progress</span>
+                    </div>
+                </div>
+                <div class="preview-card">
+                    <img src="studentdashboard1.jpeg" alt="Student dashboard sample UI">
+                    <div class="preview-caption">
+                        <span class="preview-tag">Student</span>
+                        <strong>Student Dashboard</strong>
+                        <span>Performance trends, ranks, and overview</span>
+                    </div>
+                </div>
+                <div class="preview-card">
+                    <img src="studentdashboard2.jpeg" alt="Student assignments sample UI">
+                    <div class="preview-caption">
+                        <span class="preview-tag">Student</span>
+                        <strong>Student Assignments</strong>
+                        <span>Pending tasks, leaderboard, and progress</span>
+                    </div>
+                </div>
+                <div class="preview-card">
+                    <img src="codingsection.jpeg" alt="Coding section sample UI">
+                    <div class="preview-caption">
+                        <span class="preview-tag">Coding</span>
+                        <strong>Coding Practice</strong>
+                        <span>Editor, compiler, and test execution flow</span>
+                    </div>
+                </div>
+                <div class="preview-card">
+                    <img src="mcqsection.jpeg" alt="MCQ section sample UI">
+                    <div class="preview-caption">
+                        <span class="preview-tag">MCQ</span>
+                        <strong>MCQ Assessment</strong>
+                        <span>Timed questions with navigation and scoring</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="two-column" style="margin-top: 18px;">
+                <div class="module-box">
+                    <h3>Admin Dashboard Scope</h3>
+                    <ul>
+                        <li>User, role, and class management controls</li>
+                        <li>Platform analytics and engagement snapshots</li>
+                        <li>System monitoring, audit logs, and reports</li>
+                        <li>Configuration and access governance</li>
+                    </ul>
+                </div>
+                <div class="module-box">
+                    <h3>Teacher Dashboard Scope</h3>
+                    <ul>
+                        <li>Create and publish assignments (MCQ, theory, coding)</li>
+                        <li>Track submissions, pending grading, and status</li>
+                        <li>Class-wise performance insights</li>
+                        <li>Quick actions and recent activity visibility</li>
+                    </ul>
+                </div>
+                <div class="module-box">
+                    <h3>Student Dashboard Scope</h3>
+                    <ul>
+                        <li>Overall score, rank, and progress tracking</li>
+                        <li>Assignments list with due dates and status</li>
+                        <li>Performance trends and subject analytics</li>
+                        <li>Leaderboard participation and achievements</li>
+                    </ul>
+                </div>
+                <div class="module-box">
+                    <h3>Coding + MCQ Scope</h3>
+                    <ul>
+                        <li>Practice problems with built-in editor and compiler</li>
+                        <li>Test cases, auto-evaluation, and detailed feedback</li>
+                        <li>MCQ tests with timer, navigation, and score summary</li>
+                        <li>Analytics for attempts, accuracy, and improvement</li>
+                    </ul>
+                </div>
             </div>
         </div>
 
